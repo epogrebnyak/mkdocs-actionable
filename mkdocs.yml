@@ -6,6 +6,7 @@ nav:
     - Главная: index.md
     - Обзор видов тестирования: testing.md
     - Цитаты о хаос-тестах: quotes.md
+    - Контакты и обратная связь: contacts.md
     - About us: english.md
 theme:
   name: 'material'

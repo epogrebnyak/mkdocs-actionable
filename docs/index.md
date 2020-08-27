@@ -42,17 +42,3 @@
 
 ![](https://user-images.githubusercontent.com/9265326/90131221-72314d80-dd74-11ea-9436-1d1cd7a904e6.png)
 
-### Опыт команды
-
-- Провели валидацию четырех высоконагруженных систем, обслуживающих более 250 млн клиентов
-- Выстроили техническую культуру в области chaos engineering в компании с более 2 тыс. сотрудников
-- Описали и внедрили бизнес-процессы, увязанные с результатами хаос-тестирования
-
-### Q&A
-
-- **Что такое v10n.com?** Буквенно-цифровое обозначение термина verification, верификация (10 букв, не считая первой v и последней n).
-
-### Обратная связь
-
-<script src="https://yastatic.net/q/forms-frontend-ext/_/embed.js"></script>
-<iframe src="https://forms.yandex.ru/u/5f34ef45ed5fcef271891e78/?iframe=1" frameborder="0" name="ya-form-5f34ef45ed5fcef271891e78" width="650"></iframe>

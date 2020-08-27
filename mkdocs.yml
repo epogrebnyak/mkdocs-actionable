@@ -4,8 +4,8 @@ site_author: Evgeniy Pogrebnyak
 docs_dir: docs/
 nav:
     - Начало: index.md
-    - Хаос-тесты: quotes.md
-    - Виды тестирования: testing.md
+    - Обзор видов тестирования: testing.md
+    - Цитаты о тестах: quotes.md
     - About us: english.md
 theme:
   name: 'material'

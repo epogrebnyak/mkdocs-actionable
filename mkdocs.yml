@@ -1,9 +1,7 @@
 site_name: v10n.com
-site_description: 'v10n.com Landing'
-site_author: 'Michael Hausenblas'
+site_description: 'Тестирование кластеров, АС, ПАК, сервисов в промышленной эксплуатации'
+site_author: Evgeniy Pogrebnyak
 docs_dir: docs/
-# repo_name: 'mhausenblas/actions-sandbox'
-# repo_url: 'https://github.com/mhausenblas/actions-sandbox'
 nav:
     - Начало: index.md
     - Хаос-тесты в цитатах: quotes.md
@@ -17,3 +15,7 @@ theme:
 google_analytics: 
   - UA-168750267-1
   - auto
+
+# Cmmented to prevent display of github repo: 
+# repo_name: 'mhausenblas/actions-sandbox'
+# repo_url: 'https://github.com/mhausenblas/actions-sandbox'

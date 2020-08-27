@@ -13,6 +13,13 @@ theme:
     primary: green
   language: ru
 
+# Plugins
+plugins:
+  - search:
+      lang:
+        - en
+        - ru
+
 google_analytics: 
   - UA-168750267-1
   - auto

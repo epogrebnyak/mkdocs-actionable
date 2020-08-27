@@ -1,12 +1,12 @@
-site_name: v10n.com
+site_name: 'v10n.com - Повышение надежности и отказоустойчивости ИТ-систем'
 site_description: 'Тестирование кластеров, АС, ПАК, сервисов в промышленной эксплуатации'
 site_author: Evgeniy Pogrebnyak
 docs_dir: docs/
 nav:
     - Начало: index.md
-    - Хаос-тесты в цитатах: quotes.md
+    - Хаос-тесты: quotes.md
     - Виды тестирования: testing.md
-    - About Us: english.md
+    - About us: english.md
 theme:
   name: 'material'
   palette:
@@ -16,6 +16,6 @@ google_analytics:
   - UA-168750267-1
   - auto
 
-# Cmmented to prevent display of github repo: 
+# Cоmmented to prevent display of github repo: 
 # repo_name: 'mhausenblas/actions-sandbox'
 # repo_url: 'https://github.com/mhausenblas/actions-sandbox'

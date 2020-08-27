@@ -23,7 +23,3 @@ plugins:
 google_analytics: 
   - UA-168750267-1
   - auto
-
-# Cоmmented to prevent display of github repo: 
-# repo_name: 'mhausenblas/actions-sandbox'
-# repo_url: 'https://github.com/mhausenblas/actions-sandbox'

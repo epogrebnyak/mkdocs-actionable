@@ -18,7 +18,7 @@ We use this repo to make <https://v10n.com> a multi-page site (was just a landin
 
 Делоим в Github Pages c помощью [MkDocs deploy](https://github.com/marketplace/actions/deploy-mkdocs) GitHub action.
 
-### Сссылки администратора
+### Ссылки администратора
 
 - Аналитика сайта находится по адресу: <https://analytics.google.com/analytics/web/#/report/visitors-overview/a175434403w243290021p226527957/_u.date00=20200809&_u.date01=20200816>
 

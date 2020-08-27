@@ -1,10 +1,19 @@
-site_name: Test docs
-site_description: 'A docs test'
+site_name: v10n.com
+site_description: 'v10n.com Landing'
 site_author: 'Michael Hausenblas'
 docs_dir: docs/
-repo_name: 'mhausenblas/actions-sandbox'
-repo_url: 'https://github.com/mhausenblas/actions-sandbox'
+# repo_name: 'mhausenblas/actions-sandbox'
+# repo_url: 'https://github.com/mhausenblas/actions-sandbox'
 nav:
-    - Home: index.md
+    - Начало: index.md
+    - Хаос-тесты в цитатах: quotes.md
+    - Виды тестирования: testing.md
+    - About Us: english.md
 theme:
   name: 'material'
+  palette:
+    primary: green
+
+google_analytics: 
+  - UA-168750267-1
+  - auto

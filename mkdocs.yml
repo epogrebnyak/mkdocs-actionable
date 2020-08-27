@@ -3,9 +3,9 @@ site_description: 'Тестирование кластеров, АС, ПАК, с
 site_author: Evgeniy Pogrebnyak
 docs_dir: docs/
 nav:
-    - Начало: index.md
+    - Главная: index.md
     - Обзор видов тестирования: testing.md
-    - Цитаты о тестах: quotes.md
+    - Цитаты о хаос-тестах: quotes.md
     - About us: english.md
 theme:
   name: 'material'

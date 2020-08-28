@@ -1,4 +1,4 @@
-## Enhancing reliability and resiliency of large-scale IT systems
+# Enhancing reliability and resiliency of large-scale IT systems
 
 We offer reliability testing and verification services for companies
 operating large-scale IT systems in the financial industry,
@@ -7,7 +7,7 @@ architectures are complex and release cycles for delivering new user
 functionality are accelerating.
 
 At this page, we explain our approach to chaos engineering methodology,
-highlight cases and conditions where it works best and how it delivers
+highlight cases where it works best and how reliability testing delivers
 value to IT system owners.
 
 ### Scope for advanced testing

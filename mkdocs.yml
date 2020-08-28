@@ -15,7 +15,6 @@ theme:
     primary: 'blue grey'
   language: ru
 
-# Plugins
 plugins:
   - search:
       lang:
@@ -28,3 +27,5 @@ google_analytics:
   
 markdown_extensions:  
   - attr_list
+
+copyright: '&copy; 2020 Eвгений Погребняк и эксперты v10n.com'

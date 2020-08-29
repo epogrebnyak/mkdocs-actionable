@@ -31,5 +31,8 @@ google_analytics:
   
 markdown_extensions:  
   - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 
 copyright: '&copy; 2020 Eвгений Погребняк и эксперты v10n.com'

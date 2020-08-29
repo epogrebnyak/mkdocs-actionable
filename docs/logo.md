@@ -10,27 +10,44 @@
 
 Некоторые варианты иконок Material:
 
- - :material-ab-testing: – ab-testing
- - :material-cloud: – cloud
- - :material-cloud-search: – cloud-search
- - :material-cloud-tags: – cloud-tags
- - :material-clover: – clover
- - :material-cube-outline: – cube-outline
- - :material-elevation-rise: – elevation-rise
- - :material-layers: – layers
- - :material-layers-search: – layers-search
- - :material-layers-triple: – layers-triple
- - :material-shield-bug: – shield-bug
- - :material-shield-bug-outline: – shield-bug-outline
- - :material-shield-half-full: – shield-half-full
- - :material-spa-outline: – spa-outline
- - :material-view-dashboard: – view-dashboard
- - :material-view-dashboard-outline: – view-dashboard-outline
- - :material-webhook: – webhook
- - :material-xml: – xml
- - :material-weather-hurricane: – weather-hurricane
- - :material-texture-box: – texture-box
- - :material-rhombus-split: – rhombus-split
+ :material-ab-testing: – ab-testing
 
+ :material-cloud: – cloud
 
+ :material-cloud-search: – cloud-search
 
+ :material-cloud-tags: – cloud-tags
+
+ :material-clover: – clover
+
+ :material-cube-outline: – cube-outline
+
+ :material-elevation-rise: – elevation-rise
+
+ :material-layers: – layers
+
+ :material-layers-search: – layers-search
+
+ :material-layers-triple: – layers-triple
+
+ :material-shield-bug: – shield-bug
+
+ :material-shield-bug-outline: – shield-bug-outline
+
+ :material-shield-half-full: – shield-half-full
+
+ :material-spa-outline: – spa-outline
+
+ :material-view-dashboard: – view-dashboard
+
+ :material-view-dashboard-outline: – view-dashboard-outline
+
+ :material-webhook: – webhook
+
+ :material-xml: – xml
+
+ :material-weather-hurricane: – weather-hurricane
+
+ :material-texture-box: – texture-box
+ 
+ :material-rhombus-split: – rhombus-split

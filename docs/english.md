@@ -10,28 +10,31 @@ At this page, we explain our approach to chaos engineering methodology,
 highlight cases where it works best and how reliability testing delivers
 value to IT system owners.
 
-### Scope for advanced testing
+### Scope for advanced reliability testing 
 
-What kind of company may benefit from  advanced reliability testing? Ideally, it would have at least several of the following attributes:
-a high-load system, clear performance expectations, and monitoring and disaster recovery procedures in place:
+What kind of company may benefit from more reliability testing? Such company 
+would have at least several of the following attributes: 
+a high-load distributed system, 
+clear performance expectations, and 
+monitoring and disaster recovery procedures already in place.
 
 #### 1. Type of IT system
 
-- A large-scale IT system with a complex architecture, possibly cloud-based
-- System downtime or abnormal operation hurts users and is expensive for the company
-- Software development team works closely with operations team ("build",  not just "buy")
+- A large-scale IT system with a complex architecture, possibly cloud-based.
+- System downtime or abnormal operation hurts users and is expensive for the company.
+- Software development team works closely with operations team ("build", not just "buy").
 
 #### 2. Performance expectations
 
-- Critical user scenarios are prioritized and reflected through meaningful reliability metrics (SLI/SLO)
-- The business recognizes the value of system reliability - there is possibly a business-side KPI on reliability
-- The company should meet regulatory requirements on reliability
+- Critical user scenarios are prioritized and reflected through meaningful reliability metrics (SLI/SLO).
+- The business recognizes the value of system reliability - there is possibly a business-side KPI on reliability.
+- The company should meet regulatory requirements on reliability.
 
 #### 3. Monitoring and disaster recovery
 
-- Monitoring is good enough to reflect parts of hidden system state, but is not noisy
-- The team knows how to recover the system after an outage or automated the task
-- The incidents are logged and evaluated as they accumulate (postmortems)
+- Monitoring is good enough to reflect parts of hidden system state, but is not noisy.
+- The team knows how to recover the system after an outage.
+- The incidents are logged and evaluated as they accumulate (postmortems).
 
 Such a system may still have more failures than expected. Technical team and management may want to tackle reasons behind incidents and not just handle consequences. Be prepared for upcoming risks, automate recovery, not just wait for incidents to happen. By starting reliability testing with chaos engineering you move from reactive to proactive strategy in your incident management and IT system quality assurance.
 

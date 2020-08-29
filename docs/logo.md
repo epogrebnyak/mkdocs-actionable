@@ -49,5 +49,16 @@
  :material-weather-hurricane: – weather-hurricane
 
  :material-texture-box: – texture-box
- 
+
  :material-rhombus-split: – rhombus-split
+
+
+Мне (ЕП) нравятся:
+
+:material-layers-triple: – layers-triple
+
+:material-elevation-rise: – elevation-rise
+
+:material-webhook: – webhook
+
+:material-cube-outline: – cube-outline

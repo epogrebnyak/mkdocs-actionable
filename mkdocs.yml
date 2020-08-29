@@ -5,15 +5,11 @@ docs_dir: docs/
 nav:
     - Главная: index.md
     - Обзор видов тестирования: testing.md
-    - Цитаты о хаос-тестах: quotes.md
     - Опыт команды: team.md
+    - Наш блог: blog/index.md
     - Контакты: contacts.md
     - About us: english.md
-    - 'Тестирование':
-        - 'Больше о тестировании': blog/testing/more-about-testing.md
-    - 'Примеры':
-        - 'Надежность и отказоустойчивость в секторе розничной торговли': blog/cases/retail-sector-case.md
-        - 'Опыт применения в сфере медицины': blog/cases/how-complex-systems-fail.md
+
 theme:
   name: 'material'
   palette:

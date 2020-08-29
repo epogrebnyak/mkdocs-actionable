@@ -87,11 +87,9 @@ Other common motives include:
 
 ### Our services
 
-#### Core testing service
+#### Core testing
 
-Our core service is to test client's IT system
-using fault injections. It usually takes 21-25 days 
-to design and run these tests. The tests are recylced for new releases.
+Our core service is to test client's IT system using fault injections. It usually takes 21-25 days to design and run these tests. The tests are recylced for new releases.
 
 In a typical testing assignment we accomplish the following:
 
@@ -104,13 +102,11 @@ In a typical testing assignment we accomplish the following:
 <!-- The execution cycle for our core testing service is shown in the chart
 below. -->
 
-#### Advanced services (test automation, chaos gate, methodology, staff)
+#### Advanced services 
 
-In addition to testing individual systems, we also automate and
-orchestrate chaos tests. Embeding such tests into release cycle 
-creates a systematic quality check (known as "chaos gate").
+**Test automation and chaos gate**. In addition to testing individual systems, we also automate and orchestrate chaos tests. Embeding such tests into release cycle 
+creates a systematic quality check for released software (known as "chaos gate").
 
-For companies with enough in-house reliability expertise we can formalize 
-a comprehensive corporate chaos testing methodology.
+**Technical processes.** For companies with enough in-house reliability expertise we can formalize a comprehensive corporate chaos testing methodology.
 
-We screen, recruit and train personnel for client's teams involved in chaos engineering.
+**Staff.** We screen, recruit and train personnel for client's teams involved in chaos engineering.

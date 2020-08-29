@@ -12,6 +12,9 @@ nav:
 
 theme:
   name: 'material'
+  icon:
+    logo: material/webhook
+  favicon: images/webhook-dark.png
   palette:
     primary: 'blue grey'
   language: ru

@@ -10,31 +10,33 @@ At this page, we explain our approach to chaos engineering methodology,
 highlight cases where it works best and how reliability testing delivers
 value to IT system owners.
 
-### Scope for advanced testing
+### Scope for advanced reliability testing 
 
-What kind of company may benefit from  advanced reliability testing? Ideally, it would have at least several of the following attributes:
-a high-load system, clear performance expectations, and monitoring and disaster recovery procedures in place:
+What kind of company may benefit from more reliability testing? Such company 
+would have at least several of the following attributes: 
+a high-load distributed system, 
+clear performance expectations, and 
+monitoring and disaster recovery procedures already in place.
 
 #### 1. Type of IT system
-- A large-scale IT system with a complex architecture, possibly cloud-based
-- System downtime or abnormal operation hurts users and is expensive for the company
-- Software development team works closely with operations team ("build",  not just "buy")
+
+- A large-scale IT system with a complex architecture, possibly cloud-based.
+- System downtime or abnormal operation hurts users and is expensive for the company.
+- Software development team works closely with operations team ("build", not just "buy").
 
 #### 2. Performance expectations
-- Critical user scenarios are prioritized and reflected through meaningful reliability metrics (SLI/SLO)
-- The business recognizes the value of system reliability - there is possibly a business-side KPI on reliability
-- The company should meet regulatory requirements on reliability
+
+- Critical user scenarios are prioritized and reflected through meaningful reliability metrics (SLI/SLO).
+- The business recognizes the value of system reliability - there is possibly a business-side KPI on reliability.
+- The company should meet regulatory requirements on reliability.
 
 #### 3. Monitoring and disaster recovery
-- Monitoring is good enough to reflect parts of hidden system state, but is not noisy
-- The team knows how to recover the system after an outage or automated the task
-- The incidents are logged and evaluated as they accumulate (postmortems)
 
-Such a system may still have more failures than expected. Technical team and management may want to 
-tackle reasons behind incidents and not just handle consequences. Be prepared for upcoming risks, automate recovery, 
-not just wait for incidents to happen. By starting reliability testing with chaos 
-engineering you move from reactive to proactive strategy in your incident management
-and IT system quality assurance.
+- Monitoring is good enough to reflect parts of hidden system state, but is not noisy.
+- The team knows how to recover the system after an outage.
+- The incidents are logged and evaluated as they accumulate (postmortems).
+
+Such a system may still have more failures than expected. Technical team and management may want to tackle reasons behind incidents and not just handle consequences. Be prepared for upcoming risks, automate recovery, not just wait for incidents to happen. By starting reliability testing with chaos engineering you move from reactive to proactive strategy in your incident management and IT system quality assurance.
 
 ### Chaos engineering: pioneered by Netflix
 
@@ -44,9 +46,7 @@ cloud microservice-based system diverge. So, rather idealized tests in pre-produ
 setting provided insufficient guarantees.
 
 Netflix moved to experiment-based testing of a live production system.
-They introduced small controlled infrastructure and application faults to learn how a real system reacts to them. 
-Does it fail, degrade or self-recover? Embedding artificial failures as a test helped to build a system 
-that is more resilient to actual failures.
+They introduced small controlled infrastructure and application faults to learn how a real system reacts to them. Does it fail, degrade or self-recover?  Embedding artificial failures as a test helped to build a system that is more resilient to actual failures.
 
 This testing approach has proven successful and has become a standard
 practice in the design and operation of large distributed systems. Chaos
@@ -87,11 +87,9 @@ Other common motives include:
 
 ### Our services
 
-#### Core testing service
+#### Core testing
 
-Our core service is to test client's IT system
-using fault injections. It usually takes 21-25 days 
-to design and run these tests. The tests are recylced for new releases.
+Our core service is to test client's IT system using fault injections. It usually takes 21-25 days to design and run these tests. The tests are recylced for new releases.
 
 In a typical testing assignment we accomplish the following:
 
@@ -104,13 +102,12 @@ In a typical testing assignment we accomplish the following:
 <!-- The execution cycle for our core testing service is shown in the chart
 below. -->
 
-#### Advanced services (test automation, chaos gate, methodology, staff)
+#### Advanced services 
 
-In addition to testing individual systems, we also automate and
-orchestrate chaos tests. Embeding such tests into release cycle 
-creates a systematic quality check (known as "chaos gate").
+**Test automation and chaos gate**. In addition to testing individual systems, we also automate and orchestrate chaos tests. Embeding such tests into release cycle 
+creates a systematic quality check for released software (known as "chaos gate").
 
-For companies with enough in-house reliability expertise we can formalize 
-a comprehensive corporate chaos testing methodology.
+**Technical processes.** For companies that have some in-house reliability
+experience we can help formalize a comprehensive corporate chaos testing methodology.
 
-We screen, recruit and train personnel for client's teams involved in chaos engineering.
+**Staff.** We screen, recruit and train personnel for client's teams involved in chaos engineering.

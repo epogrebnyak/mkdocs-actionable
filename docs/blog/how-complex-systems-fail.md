@@ -5,13 +5,18 @@
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2S0k12uZR14" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
 
 Ричард Кук также написал 18 тезисов о надежности информационных систем, 
-многие их которых можно брать на знамена борьбы за отказоустойчивость, 
-например:
+многие их которых можно брать на знамена борьбы за отказоустойчивость.
 
-> Чтобы обеспечить работу без сбоев, нужен опыт работы со сбоями.
 
 Полностью тезисы есть на сайте <https://how.complexsystems.fail/>, здесь мы приводим 
 заголовки наиболее ярких из них:
+
+- Сложные системы содержат целые группы скрытых сбоев.
+- Безопасность это характеристика системы, а не ее компонент.
+- Решения, принимаемые при эксплуатации системы, всегда содержат элемент риска 
+- Чтобы обеспечить работу без сбоев, нужен опыт работы со сбоями.
+
+<!--  Переводы можно сюда:
 
 1. Complex systems are intrinsically hazardous systems.
 1. Complex systems are heavily and successfully defended against failure
@@ -31,9 +36,5 @@
 1. Safety is a characteristic of systems and not of their components
 1. People continuously create safety.
 1. Failure free operations require experience with failure.
-
-<!--
-
-1. Чтобы обеспечить работу без сбоев, нужен опыт работы со сбоями.
 
 -->

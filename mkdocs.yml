@@ -1,6 +1,7 @@
 site_name: 'Повышение надежности и отказоустойчивости ИТ-систем'
 site_description: 'Тестирование кластеров, АС, ПАК, сервисов в промышленной эксплуатации'
 site_author: Evgeniy Pogrebnyak
+copyright: '&copy; 2020 Eвгений Погребняк и эксперты v10n.com'
 # Note: - site_url affects behavior of 404 page
 #       - when transfer must change to https://v10n.com/ 
 site_url: https://epogrebnyak.github.io/mkdocs-actionable/
@@ -27,6 +28,11 @@ plugins:
       lang:
         - en
         - ru
+#  - pdf-export:
+#      combined: true 
+#      verbose: true
+#      media_type: print
+#      enabled_if_env: ENABLE_PDF_EXPORT
 
 google_analytics: 
   - UA-168750267-1
@@ -37,5 +43,3 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-
-copyright: '&copy; 2020 Eвгений Погребняк и эксперты v10n.com'

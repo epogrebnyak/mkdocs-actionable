@@ -20,7 +20,7 @@ theme:
     logo: material/webhook
   favicon: images/webhook-dark.png
   palette:
-    primary: 'blue grey'
+    primary: 'cyan'
   language: ru
 
 plugins:

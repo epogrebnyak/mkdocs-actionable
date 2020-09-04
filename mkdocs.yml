@@ -17,8 +17,9 @@ nav:
 theme:
   name: 'material'
   icon:
-    logo: material/webhook
-  favicon: images/webhook-dark.png
+    logo: cube-outline
+  # TODO: must change to cube-outline 
+  #favicon: images/webhook-dark.png
   palette:
     primary: 'cyan'
   language: ru

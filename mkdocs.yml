@@ -2,9 +2,11 @@ site_name: 'Повышение надежности и отказоустойч�
 site_description: 'Тестирование кластеров, АС, ПАК, сервисов в промышленной эксплуатации'
 site_author: Evgeniy Pogrebnyak
 copyright: '&copy; 2020 Eвгений Погребняк и эксперты v10n.com'
-# Note: - site_url affects behavior of 404 page
-#       - when transfer must change to https://v10n.com/ 
+
+# Note: site_url affects behavior of 404 page,
+#       when transfering must change to https://v10n.com/ 
 site_url: https://epogrebnyak.github.io/mkdocs-actionable/
+
 docs_dir: docs/
 nav:
     - Главная: index.md
@@ -28,6 +30,8 @@ plugins:
       lang:
         - en
         - ru
+# pdf-export used to generate pdf version of the web site. 
+# this is an experimental feature, the pdf file not used publically
 #  - pdf-export:
 #      combined: true 
 #      verbose: true

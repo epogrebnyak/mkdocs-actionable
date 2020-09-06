@@ -14,13 +14,14 @@ value to IT system owners.
 
 What kind of company may benefit from more reliability testing? Such company 
 would have at least several of the following attributes: 
-a high-load distributed system, 
-clear performance expectations, and 
-monitoring and disaster recovery procedures already in place.
+
+- a high-load distributed system, 
+- clear performance expectations, and 
+- monitoring and disaster recovery procedures already in place.
 
 #### 1. Type of IT system
 
-- A large-scale IT system with a complex architecture, possibly cloud-based.
+- A distributed IT system with a complex architecture, possibly cloud-based.
 - System downtime or abnormal operation hurts users and is expensive for the company.
 - Software development team works closely with operations team ("build", not just "buy").
 
@@ -107,7 +108,7 @@ below. -->
 **Test automation and chaos gate**. In addition to testing individual systems, we also automate and orchestrate chaos tests. Embeding such tests into release cycle 
 creates a systematic quality check for released software (known as "chaos gate").
 
-**Technical processes.** For companies that have some in-house reliability
+**Rules and processes.** For companies that have some in-house reliability
 experience we can help formalize a comprehensive corporate chaos testing methodology.
 
 **Staff.** We screen, recruit and train personnel for client's teams involved in chaos engineering.

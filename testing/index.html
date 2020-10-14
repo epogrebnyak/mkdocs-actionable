@@ -1,0 +1,545 @@
+
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Тестирование кластеров, АС, ПАК, сервисов в промышленной эксплуатации">
+      
+      
+        <link rel="canonical" href="https://epogrebnyak.github.io/mkdocs-actionable/testing/">
+      
+      
+        <meta name="author" content="Evgeniy Pogrebnyak">
+      
+      <link rel="shortcut icon" href="../images/cube-outline.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.2">
+    
+    
+      
+        <title>Обзор видов тестирования - Повышение надежности и отказоустойчивости ИТ-систем</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.38780c08.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.3f72e892.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#00bdd6">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+        
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-168750267-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview",document.location.pathname)})</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="cyan" data-md-color-accent="">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#-" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://epogrebnyak.github.io/mkdocs-actionable/" title="Повышение надежности и отказоустойчивости ИТ-систем" class="md-header-nav__button md-logo" aria-label="Повышение надежности и отказоустойчивости ИТ-систем">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18-.21 0-.41-.06-.57-.18l-7.9-4.44A.991.991 0 013 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18.21 0 .41.06.57.18l7.9 4.44c.32.17.53.5.53.88v9M12 4.15L6.04 7.5 12 10.85l5.96-3.35L12 4.15M5 15.91l6 3.38v-6.71L5 9.21v6.7m14 0v-6.7l-6 3.37v6.71l6-3.38z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Повышение надежности и отказоустойчивости ИТ-систем
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Обзор видов тестирования
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://epogrebnyak.github.io/mkdocs-actionable/" title="Повышение надежности и отказоустойчивости ИТ-систем" class="md-nav__button md-logo" aria-label="Повышение надежности и отказоустойчивости ИТ-систем">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18-.21 0-.41-.06-.57-.18l-7.9-4.44A.991.991 0 013 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18.21 0 .41.06.57.18l7.9 4.44c.32.17.53.5.53.88v9M12 4.15L6.04 7.5 12 10.85l5.96-3.35L12 4.15M5 15.91l6 3.38v-6.71L5 9.21v6.7m14 0v-6.7l-6 3.37v6.71l6-3.38z"/></svg>
+
+    </a>
+    Повышение надежности и отказоустойчивости ИТ-систем
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      Главная
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Обзор видов тестирования
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Обзор видов тестирования
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    Релизный цикл и виды тестов
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    Дополнительная информация по видам тестов
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-_1" class="md-nav__link">
+    О хаос-тестах
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../team/" class="md-nav__link">
+      Опыт команды
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../blog/" class="md-nav__link">
+      Наш блог
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../contacts/" class="md-nav__link">
+      Контакты
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../english/" class="md-nav__link">
+      About us
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    Релизный цикл и виды тестов
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    Дополнительная информация по видам тестов
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-_1" class="md-nav__link">
+    О хаос-тестах
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="-">Роль хаос-тестов среди других видов тестирования</h1>
+<h2 id="_1">Релизный цикл и виды тестов</h2>
+<p>В начале релиза программное обеспечение проходит функциональные тесты,
+которые проверяют корректность работы программы и соответствие 
+заложенным требованиям.</p>
+<p>Далее в ходе движения релиза программное обеспечение и 
+используемая инфраструктура могут проходить несколько типов испытаний:</p>
+<ul>
+<li>системное тестирование</li>
+<li>интеграционное тестирование </li>
+<li>нагрузочное тестирование</li>
+<li>приемо-сдаточные испытания</li>
+<li>пен-тесты (сybersecurity pen-testing)</li>
+<li>хаос-тесты (chaos engineering)</li>
+<li>промышленные аварийные учения</li>
+</ul>
+<p>Глубина и вообще наличие этих тестов зависят от зрелости цикла релизов, размеров системы, требуемого уровня надежности и безопасности системы. </p>
+<p>Хаос-тесты занимают промежуточное положение между нагрузочными тестами и аварийными учениями, с той разницей, что в нагрузочных тестах обычно не вводятся сбои, а аварийные учения обычно показывают скорость перехода системы на резервный контур, а не устойчивость и самовосстановление системы.</p>
+<p>Особенности отдельных видов тестов обсуждаются ниже и в сводной таблице:</p>
+<p>1.  Стресс-тестирование: проверка отказоустойчивости системы вне пределов нормального функционирования (без сбоев)</p>
+<ul>
+<li>Узкие места приложения (интенсивно используемые участки кода, требующие оптимизации)</li>
+<li>Ошибки управления ресурсами</li>
+</ul>
+<p>2.  Нагрузочное тестирование: проверка отказоустойчивости системы при пиковых нагрузках внутри пределов нормального функционирования (без сбоев)</p>
+<ul>
+<li>Способность нести максимальную пиковую нагрузку, валидация производительности</li>
+</ul>
+<p>3.  Хаос-тестирование ("сhaos engineering"): проверка отказоустойчивости системы через активный поиск уязвимостей между слоями программно-аппаратного комплекса в условиях сбоев</p>
+<ul>
+<li>Выявление еще не случившихся инцидентов (уязвимостей) через эмуляцию сбоев системного и прикладного уровня</li>
+<li>Поведение системы при сбое, самовосстановление</li>
+<li>Аудит инструментов мониторинга и сопровождения</li>
+</ul>
+<p>4.  Аварийные учения: проверка механизмов восстановления системы после инцидентов </p>
+<ul>
+<li>Проверка переключения на резервные регионы, площадки, каналы, базы данных </li>
+</ul>
+<p>5.  Информационная безопасность ("pen-testing"): проверка безопасности через активный анализ системы на возможность неавторизованного доступа</p>
+<ul>
+<li>Установить возможность происшествий, связанных с хищением данных, проникновением или отказом в обслуживании в результате внешнего воздействия. </li>
+</ul>
+<p><img alt="Таблица-виды тестов" src="../images/testing.png" /></p>
+<h2 id="_2">Дополнительная информация по видам тестов</h2>
+<table>
+<thead>
+<tr class="header">
+<th><strong>Основной вопрос</strong></th>
+<th><strong>Вид тестов</strong></th>
+<th><strong>Типовая стадия</strong></th>
+<th><strong>Учитывается ли риск сбоев инфраструктуры?</strong></th>
+<th><strong>Что считать хорошим результатом?</strong></th>
+<th><strong>Методология / направление</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Выполняет ли система заявленный функционал?</strong></td>
+<td>Unit тесты, функциональные тесты</td>
+<td>Разработка</td>
+<td><center>Нет</center></td>
+<td>Система соответствует спецификации</td>
+<td>Test-driven development (TDD)</td>
+</tr>
+<tr class="even">
+<td><strong>Устойчива ли система?</strong></td>
+<td>Системные тесты</td>
+<td>Ввод в эксплуатацию</td>
+<td align="center"><center>Нет</center></td>
+<td>В системе нет явно слабых мест и ошибок</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>Достаточна ли производительность системы?</strong></td>
+<td>Нагрузочные тесты</td>
+<td>Ввод в эксплуатацию</td>
+<td><center>Нет</center></td>
+<td>Система держит пиковую нагрузку</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>Как ведет себя система при случайном сбое ресурсов?</strong></td>
+<td>Хаос-тесты</td>
+<td>Эксплуатация</td>
+<td><center>Да</center></td>
+<td>Устойчивость или самовосстановление системы после инцидента</td>
+<td>Chaos engineering</td>
+</tr>
+<tr class="odd">
+<td><strong>Можем ли восстановить систему после сбоя?</strong></td>
+<td>Аварийные учения</td>
+<td>Эксплуатация</td>
+<td><center>Да</center></td>
+<td>Быстрый переход на резервную систему после инцидента</td>
+<td>Disaster recovery (DR), business continuity (BC)</td>
+</tr>
+<tr class="even">
+<td><strong>Защищена ли система от внешних атак?</strong></td>
+<td>Пен-тесты</td>
+<td>На разных стадиях</td>
+<td><center>Обычно нет</center></td>
+<td>Система защищена от внешней атаки</td>
+<td>Информационная безопасность (infosec)</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="-_1">О хаос-тестах</h2>
+<p>(адаптировано из <a href="http://principlesofchaos.org">principlesofchaos.org</a>)</p>
+<p>Хаос-инженерия - это дисциплина, изучающая проведение экспериментов в распределенных информационных системах с целью укрепления уверенности в способности системы противостоять негативным изменениям эксплуатационной среды.</p>
+<p>Хаос-тесты служат для выявления потенциальных причин сбоев системы (точек отказа), которые могут быть расположены на пересечении системного, прикладного и интеграционного слоя. Хаос-тесты также позволяют выявить особенности архитектуры, процессов разработки, мониторинга и сопровождения системы в стадии эксплуатации, которые влияют на надежность системы.</p>
+<p>С помощью хаос-тестов также верифицируют отказоустойчивость системы после ее доработки.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href=".." class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Назад
+                </span>
+                Главная
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../team/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Вперед
+                </span>
+                Опыт команды
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            &copy; 2020 Eвгений Погребняк и эксперты v10n.com
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.77e55a48.min.js"></script>
+      <script src="../assets/javascripts/bundle.9554a270.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "search.config.lang": "ru", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e # \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
